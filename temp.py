@@ -9,7 +9,7 @@ def main():
     tempF = tempConvert(tempC)
     uploadToDB(tempF)
     print("Temp Recorded!")
-    time.sleep(21,600)
+    time.sleep(21600)
     main()
 
 def hexConvert(output):
