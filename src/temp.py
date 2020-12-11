@@ -31,6 +31,9 @@ def uploadToDB(tempF):
     pass
 
 def tweet(tempF):
-    api.update_status("The current temperature is " + str(tempF) + " degrees fahrenheit.")
+    #found the temp sensor to be around 10-15 degrees off 
+    tempF = tempF - 15
+    timestamp = time.time
+    api.update_status("It is " + timestamp + "and the current temperature is " + str(tempF) + " degrees fahrenheit.")
 
 main()
