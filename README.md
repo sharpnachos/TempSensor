@@ -1,4 +1,4 @@
-# Huntley Weather Station
+# Huntley Weather Station (@huntley_weather on Twitter)
 ### By: Thomas Walsh, Kevin Criollo, and Saahil Patel
 ## Overview
 Using a Rapberry Pi 4 and a TC74 Temperature Sensor connected via breadboard we have built a weather station for my hometown, Huntley Illinois. The program was originally made for a website but we decided not to launch it so now it is a twitter bot that posts hourly updates of the temperature in Huntley. **Follow us @huntley_weather** However, we have added the code for the website and everything required to run on a server.
