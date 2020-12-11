@@ -1,12 +1,13 @@
 import subprocess
 import time
 import tweepy
+import datetime
+import calendar
 
 auth = tweepy.OAuthHandler("X", "X")
 auth.set_access_token("X","X")
 
 api = tweepy.API(auth)
-
 def main():
     bashCommand = "sudo i2cget -y 1 0x48"
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
@@ -33,7 +34,9 @@ def uploadToDB(tempF):
 def tweet(tempF):
     #found the temp sensor to be around 10-15 degrees off 
     tempF = tempF - 15
-    timestamp = time.time
-    api.update_status("It is " + timestamp + "and the current temperature is " + str(tempF) + " degrees fahrenheit.")
+    ct = datetime.datetime.now() 
+    ts = ct.timestamp() 
+    ts = datetime.datetime.fromtimestamp(ts).strftime('%H:%M:%S')
+    api.update_status("It is " + ts + "and the current temperature is " + str(tempF) + " degrees fahrenheit.")
 
 main()
