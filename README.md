@@ -5,4 +5,4 @@ Using a Rapberry Pi 4 and a TC74 Temperature Sensor connected via breadboard we 
 ## Usage
 This code can be used to replicate a similar project but many materials are needed including a Raspberry Pi, a breadboard, wires, resistors, the TC74 Temperature sensor, and a Twitter account with developer privileges. The main usage of this account will be to check the weather in Huntley on Twitter.
 ## Some Things to Note
-- This project will most likely be retired soon as the hardware is currently sitting in a tupperware container outside my room.
+- This project has been retired because the hardware was sitting in a tupperware container outside my room.
